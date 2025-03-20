@@ -1,19 +1,18 @@
 import andy from "./../images/andy.jpeg";
 import dwight from "./../images/dwight.jpeg";
-import knope from "./../images/knope.png";
 import redacted from "./../images/REDACTED.png";
 import tom from "./../images/tom.png";
 import angela from "./../images/angela.png";
+import sklitakling from "./../images/sklitakling.png"
 
 export const speakers = [
   {
-    name: "Leslie Knope",
-    title: "Deputy Chief",
-    team: "Parks and Recreation",
-    basedIn: "Pawnee, IN",
+    name: "Sklitakling",
+    title: "The Best Band",
+    team: "Music",
     shortBio:
-      "Leslie is full of energy and passion. She's enthusiastic about everything she does. Many folks compare her to Brittany Joiner.",
-    avatar: knope,
+      "Sklitakling er et jæla fett band",
+    avatar: sklitakling,
     pronouns: "she/her",
   },
   {
@@ -54,15 +53,5 @@ export const speakers = [
       "I pretty much keep the ship running around here. Speaking of ship, i love boats. Did I mention I went to Cornell?",
     avatar: andy,
     pronouns: "he/him",
-  },
-  {
-    name: "Angela Martin",
-    title: "Chief of Accounting Taxes (CAT)",
-    team: "Accounting",
-    basedIn: "Scranton, PA",
-    shortBio:
-      "My pride and joy are my cats. I also have a son, and i dated a senator. That's all you need to know.",
-    avatar: angela,
-    pronouns: "she/her",
   },
 ];

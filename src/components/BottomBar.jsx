@@ -222,13 +222,6 @@ export default (props) => {
               </EuiFlexItem>
               <EuiFlexItem grow={false}>
                 <EuiLink href="#" target="_blank" className="social-links">
-                  <EuiText color="#ffde59">
-                    <i className="social-icons fa-brands fa-linkedin"></i>
-                  </EuiText>
-                </EuiLink>
-              </EuiFlexItem>
-              <EuiFlexItem grow={false}>
-                <EuiLink href="#" target="_blank" className="social-links">
                   <EuiText color="#c96ae3">
                     <i className="social-icons fa-brands fa-instagram"></i>
                   </EuiText>

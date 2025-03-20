@@ -3,18 +3,33 @@ import {
   EuiFlexGroup,
   EuiFlexItem,
   EuiImage,
-  EuiText
+  EuiText,
+  EuiTextAlign
 } from "@elastic/eui";
 import React from "react";
 import AddCalButtons from "../../utilities/addCalButtons";
 import { sessionOne, sessionTwo } from "../../data/consts";
-import heroImage from "../../images/hero-image.webp";
+import heroImage from "../../images/TrikkWiki.png";
+import { max } from "moment";
 export default class EventDetails extends React.Component {
+  renderTopText = (props) => {
+    const t = (this.props.t)
+    return(
+      <EuiEmptyPrompt title={
+        <span>
+          {t("Opplev musikk på Bergens historiske trikk")}
+        </span>
+      }>
+
+      </EuiEmptyPrompt>
+    )
+  }
+
   renderHero = (props) => {
     return (
       <EuiImage
         size="fullWidth"
-        alt="Rainbow Stack Summit banner"
+        alt="trikktrikktrikk"
         src={heroImage}
       />
     );
@@ -22,29 +37,36 @@ export default class EventDetails extends React.Component {
 
   renderMoreDetails = (props) => {
    const t = (this.props.t)
+   const myStyle = {
+      backgroundColor: "lightgrey",
+      maxWidth: "1200px",
+      borderRadius: "100px",
+      EuiTextAlign: "center"
+   }
 
     return (
-      <EuiEmptyPrompt
+      <EuiEmptyPrompt style= {myStyle}
         title={
-          <span>
-            {t("Identity theft is not a joke. Millions of famillies suffer every year.")}
+          <span style={myStyle}>
+            {t("Hva er Trikkefestivalen?")}
           </span>
         }
         body={
-          <EuiText>
-        {t("Two sessions with different talks at each one, so join both if you can!")}
-          </EuiText>
+        <EuiText style={{myStyle}}>
+          <p>
+            Opplev musikk mens du reiser med den historiske trikken gjennom Bergens gater!
+          </p>
+          <p>
+            Trikkefestivalen er et frivillig initativ hvor vi ønsker å gjennomføre en musikkfestival på den historiske trikken som går fra Café Opera til Teknisk Museum på Møhlenpris.
+            Festivalen blir mulig gjennom frivillig arbeid og partnerskap med lokale bedrifter
+          </p>
+        </EuiText>
         }
         
         actions={[
           <AddCalButtons 
           date={sessionOne.dateAndTime}
           calendarLink = {sessionOne.calendarLink}
-          t={t}
-          />,
-          <AddCalButtons 
-          date={sessionTwo.dateAndTime}
-          calendarLink = {sessionTwo.calendarLink}
           t={t}
           />
         ]}
@@ -55,6 +77,9 @@ export default class EventDetails extends React.Component {
   render() {
     return (
       <>
+        <EuiFlexGroup gutterSize="l">
+          <EuiFlexItem>{this.renderTopText()}</EuiFlexItem>
+        </EuiFlexGroup>
         <EuiFlexGroup gutterSize="l">
           <EuiFlexItem>{this.renderHero()}</EuiFlexItem>
         </EuiFlexGroup>

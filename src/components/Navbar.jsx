@@ -29,7 +29,7 @@ export default function Navbar(props) {
         iconProps={{
           onClick: props.onLogoClick,
         }}
-        pageTitle="IDT Conference"
+        pageTitle="Trikkefestivalen"
         pageTitleProps={{
           css: {
             cursor: "pointer",

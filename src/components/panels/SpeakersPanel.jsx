@@ -8,14 +8,14 @@ import {
 } from "@elastic/eui";
 import React from "react";
 import { fetchSpeaker } from "../../utilities/Api/fetchSpeakerDetails";
+import { speakers } from "../../data/speakers";
 
 // speaker data lives in this spreadsheet: https://docs.google.com/spreadsheets/d/1XgyHXaReTZ3Nq_r7QS18GDvqK_ht010QqnI6PXAnePA/edit#gid=0
 
-const resource = fetchSpeaker();
 
 function SpeakersPanel({t}) {
-  const speakers = resource.speakers.read();
-  console.log(speakers)
+
+  //{console.log(speakersfile)}
   return (
     <>
       <EuiFlexGrid
