@@ -1,7 +1,7 @@
 {
-  "name": "rainbow-stack-summit",
+  "name": "trikkefestivalen",
   "version": "0.1.0",
-  "homepage": "https://kjemist.github.io/trikkefestivalen",
+  "homepage": "https://trikkefestivalen.vercel.app/trikkefestivalen",
   "private": true,
   "dependencies": {
     "@elastic/datemath": "^5.0.3",
