@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useCallback } from "react";
 import {
   EuiFlexGroup,
   EuiPage,
@@ -13,28 +13,20 @@ import BottomBar from "./BottomBar";
 import EventDetails from "./panels/EventDetails";
 import SpeakersPanel from "./panels/SpeakersPanel";
 import TalksPanel from "./panels/TalksPanel";
-//import Navbar from "./Navbar";
-import mixpanel from 'mixpanel-browser'; // importing mixpanel
+//import Navbar from "./Navbar"
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-// mixpanel.init('YOUR_TOKEN'); // initializing mixpanel
 
 import RecordingsPanel from "./panels/RecordingsPanel";
 import FAQsPanel from "./panels/FAQsPanel";
 import { Routes, Route } from "react-router-dom";
 import history from "../utilities/history";
 import { Suspense } from "react";
-
-
 import spinner from "../utilities/spinner.gif";
 import Testpage from "../utilities/Testpage";
 import Select from "../utilities/Select";
-//function MainPage() {
-//  const [selectedTab, setSelectedTab] = useState("event");
-
 
 const Spinner = () => {
-  const {i18n, t } = useTranslation(["common"])
+  const { t } = useTranslation(["common"])
   return (
     <div>
       <img
@@ -55,7 +47,7 @@ const Spinner = () => {
 };
 
 function MainPage(props) {
-   const {i18n, t } = useTranslation(["common"])
+   const { t } = useTranslation(["common"])
 
   const tabs = [
     {
@@ -106,12 +98,6 @@ function MainPage(props) {
 
     
   ];
-
-  const onLogoClick = useCallback(() => {
-    //onSelectedTabChanged("event");
-    // mixpanel.track("Rainbow logo clicked") // Tracking logo click event
-  }, []);
-
 
   return (
     <EuiPage paddingSize="none">

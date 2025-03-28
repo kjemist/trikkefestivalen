@@ -6,6 +6,7 @@ import angela from "./../images/angela.png";
 import sklitakling from "./../images/sklitakling.png"
 
 export const speakers = [
+
   {
     name: "Sklitakling",
     title: "The Best Band",
@@ -54,4 +55,5 @@ export const speakers = [
     avatar: andy,
     pronouns: "he/him",
   },
-];
+]
+

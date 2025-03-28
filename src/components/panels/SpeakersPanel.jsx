@@ -29,7 +29,7 @@ function SpeakersPanel({t}) {
             <EuiFlexItem className="speaker-card">
               <EuiCard
                 aria-label={speaker.name}
-                image={<EuiImage size="m" src={speaker.imageLink}></EuiImage>}
+                image={<EuiImage size="m" src={speaker.avatar}></EuiImage>}
                 footer={t(speaker.shortBio)}
                 description={
                   <>
