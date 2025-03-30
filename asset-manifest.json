@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trikkefestivalen/static/css/main.24af61ff.css",
-    "main.js": "/trikkefestivalen/static/js/main.3ae8fc40.js",
+    "main.js": "/trikkefestivalen/static/js/main.358ba5dd.js",
     "icon.accessibility.js": "/trikkefestivalen/static/js/icon.accessibility.e5df2d15.chunk.js",
     "icon.aggregate.js": "/trikkefestivalen/static/js/icon.aggregate.599e524b.chunk.js",
     "icon.alert.js": "/trikkefestivalen/static/js/icon.alert.8ce13018.chunk.js",
@@ -466,7 +466,7 @@
     "index.html": "/trikkefestivalen/index.html",
     "static/media/getFetch.cjs": "/trikkefestivalen/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.24af61ff.css.map": "/trikkefestivalen/static/css/main.24af61ff.css.map",
-    "main.3ae8fc40.js.map": "/trikkefestivalen/static/js/main.3ae8fc40.js.map",
+    "main.358ba5dd.js.map": "/trikkefestivalen/static/js/main.358ba5dd.js.map",
     "icon.accessibility.e5df2d15.chunk.js.map": "/trikkefestivalen/static/js/icon.accessibility.e5df2d15.chunk.js.map",
     "icon.aggregate.599e524b.chunk.js.map": "/trikkefestivalen/static/js/icon.aggregate.599e524b.chunk.js.map",
     "icon.alert.8ce13018.chunk.js.map": "/trikkefestivalen/static/js/icon.alert.8ce13018.chunk.js.map",
@@ -921,6 +921,6 @@
   },
   "entrypoints": [
     "static/css/main.24af61ff.css",
-    "static/js/main.3ae8fc40.js"
+    "static/js/main.358ba5dd.js"
   ]
 }
