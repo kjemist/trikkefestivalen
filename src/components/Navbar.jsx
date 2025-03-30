@@ -37,7 +37,7 @@ export default function Navbar(props) {
             maxWidth: "310px",
           },
           onClick: () => {
-            history.push("/");
+            history.push("#/");
             window.location.reload();
           },
         }}

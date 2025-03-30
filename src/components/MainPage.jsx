@@ -21,7 +21,7 @@ import i18next from "i18next";
 
 import RecordingsPanel from "./panels/RecordingsPanel";
 import FAQsPanel from "./panels/FAQsPanel";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import history from "../utilities/history";
 import { Suspense } from "react";
 
@@ -57,45 +57,41 @@ const Spinner = () => {
 function MainPage(props) {
    const {i18n, t } = useTranslation(["common"])
 
+  let navigate = useNavigate();
   const tabs = [
     {
       id: "event",
       label: t("Event Details"),
       onClick: () => {
-        history.push("/events");
-        window.location.reload();
+        navigate("events")
       },
     },
     {
       id: "speakers",
       label: t("Speakers"),
       onClick: () => {
-        history.push("/speakers");
-        window.location.reload();
+        navigate("speakers")
       },
     },
     {
       id: "talks",
       label: t("Talks"),
       onClick: () => {
-        history.push("/talks");
-        window.location.reload();
+        navigate("talks")
       },
     },
     {
       id: "recordings",
       label: t("Recordings"),
       onClick: () => {
-        history.push("/recordings");
-        window.location.reload();
-      },
+          navigate("recordings")
+        },
     },
     {
       id: "faq",
       label: t("FAQs"),
       onClick: () => {
-        history.push("/faq");
-        window.location.reload();
+        navigate("faq")
       },
       
     },

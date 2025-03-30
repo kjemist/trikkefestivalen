@@ -7,14 +7,16 @@ import history from "./utilities/history";
 
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 function App() {
+  let navigate = useNavigate();
   React.useEffect(() => {
     // routes user to home page when clicking the rainbowCluster icon
     let element = document.getElementsByClassName("euiIcon");
     console.log("use Effect");
     for (let i = 0; i < element.length; i++)
       element[i].addEventListener("click", () => {
-        history.push("/");
+        history.push("#/");
         window.location.reload();
       });
     if (localStorage.getItem("theme")) {
