@@ -27,7 +27,7 @@ If you want to contribute, do not hesitate to get in touch (illimar.rekand@gmail
 ## Contributors
 
 Illimar Rekand (illimar.rekand@gmail.com) \
-Kai Waløen ([enter email, website here])
+Kai Waløen (kai.waloen@gmail.com | www.kwal.no)
 
 ## License
 
