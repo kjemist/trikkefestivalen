@@ -1,0 +1,20 @@
+{
+    "eventDetails": "Arrangementdetaljer",
+    "speakers": "Foredragsholdere",
+    "talks": "Foredrag",
+    "recordings": "Opptak",
+    "faq": "FAQ/ofte stilte spørsmål",
+    "saveDate": "Lagre følgende sesjon: {date}",
+    "signUp": "Logg inn for oppdateringer",
+    "joinSlack": "Bli med i Slack-gruppen",
+    "showDatesEDT": "vis tidspunkter i tidssone EDT",
+    "showDatesLocal": "vis tidspunkter i lokal tidssone",
+    "session": "Sesjon",
+    "time": "Tid",
+    "title": "Tittel",
+    "description": "Beskrivelse",
+    "speaker": "Foredragsholder",
+    "genre": "Sjanger",
+    "actions": "Handlinger"
+  }
+  

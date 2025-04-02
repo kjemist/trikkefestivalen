@@ -1,7 +1,6 @@
 {
   "name": "trikkefestivalen",
   "version": "0.1.0",
-  "homepage": "https://trikkefestivalen.vercel.app/trikkefestivalen",
   "private": true,
   "dependencies": {
     "@elastic/datemath": "^5.0.3",
