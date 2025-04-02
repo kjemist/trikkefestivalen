@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trikkefestivalen/static/css/main.24af61ff.css",
-    "main.js": "/trikkefestivalen/static/js/main.358ba5dd.js",
+    "main.js": "/trikkefestivalen/static/js/main.de9b83ce.js",
     "icon.accessibility.js": "/trikkefestivalen/static/js/icon.accessibility.e5df2d15.chunk.js",
     "icon.aggregate.js": "/trikkefestivalen/static/js/icon.aggregate.599e524b.chunk.js",
     "icon.alert.js": "/trikkefestivalen/static/js/icon.alert.8ce13018.chunk.js",
@@ -454,7 +454,6 @@
     "icon.wrench.js": "/trikkefestivalen/static/js/icon.wrench.52100367.chunk.js",
     "static/js/787.e7501ad4.chunk.js": "/trikkefestivalen/static/js/787.e7501ad4.chunk.js",
     "static/media/sklitakling.png": "/trikkefestivalen/static/media/sklitakling.db514ae2b738c8707cc1.png",
-    "static/media/angela.png": "/trikkefestivalen/static/media/angela.c94438c743df32f5def6.png",
     "static/media/TrikkWiki.png": "/trikkefestivalen/static/media/TrikkWiki.cfb1286e3340daaa6782.png",
     "static/media/tom.png": "/trikkefestivalen/static/media/tom.4922e01a7b101859d065.png",
     "static/media/REDACTED.png": "/trikkefestivalen/static/media/REDACTED.c8fd806ae673e325c908.png",
@@ -466,7 +465,7 @@
     "index.html": "/trikkefestivalen/index.html",
     "static/media/getFetch.cjs": "/trikkefestivalen/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.24af61ff.css.map": "/trikkefestivalen/static/css/main.24af61ff.css.map",
-    "main.358ba5dd.js.map": "/trikkefestivalen/static/js/main.358ba5dd.js.map",
+    "main.de9b83ce.js.map": "/trikkefestivalen/static/js/main.de9b83ce.js.map",
     "icon.accessibility.e5df2d15.chunk.js.map": "/trikkefestivalen/static/js/icon.accessibility.e5df2d15.chunk.js.map",
     "icon.aggregate.599e524b.chunk.js.map": "/trikkefestivalen/static/js/icon.aggregate.599e524b.chunk.js.map",
     "icon.alert.8ce13018.chunk.js.map": "/trikkefestivalen/static/js/icon.alert.8ce13018.chunk.js.map",
@@ -921,6 +920,6 @@
   },
   "entrypoints": [
     "static/css/main.24af61ff.css",
-    "static/js/main.358ba5dd.js"
+    "static/js/main.de9b83ce.js"
   ]
 }
