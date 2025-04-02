@@ -8,14 +8,9 @@ import {
   useGeneratedHtmlId,
   EuiTitle,
   EuiTextColor,
-  EuiContext,
-  EuiMark,
-  useEuiI18n,
-  EuiButton,
-  EuiI18n
 } from "@elastic/eui";
 import { faqs } from "../../data/faqs";
-import { useIsXs, useIsS, useIsM } from "../../hooks/responsive";
+import { useIsXs, useIsS } from "../../hooks/responsive";
 
 const FaqAccordionRow = ({ question, detail, answer }) => {
   const [isXs, isS] = [useIsXs(), useIsS()];

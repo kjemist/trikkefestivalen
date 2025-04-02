@@ -13,13 +13,11 @@ import BottomBar from "./BottomBar";
 import EventDetails from "./panels/EventDetails";
 import SpeakersPanel from "./panels/SpeakersPanel";
 import TalksPanel from "./panels/TalksPanel";
-//import Navbar from "./Navbar"
 import { useTranslation } from "react-i18next";
 
 import RecordingsPanel from "./panels/RecordingsPanel";
 import FAQsPanel from "./panels/FAQsPanel";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import history from "../utilities/history";
 import { Suspense } from "react";
 import spinner from "../utilities/spinner.gif";
 import Testpage from "../utilities/Testpage";
