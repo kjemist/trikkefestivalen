@@ -1,7 +1,6 @@
 import React from "react";
-import { EuiIcon, EuiPageHeader , EuiComboBox,EuiButton, EuiFlexItem} from "@elastic/eui";
+import { EuiIcon, EuiPageHeader } from "@elastic/eui";
 import AddCalButtons from "../utilities/addCalButtons";
-/*import { makeRainbowText } from "../utilities/rainbowLetters";*/
 import { sessionOne, sessionTwo, darkThemeLogo, lightThemeLogo } from "../data/consts";
 import history from "../utilities/history";
 import { useState } from "react";
@@ -18,8 +17,6 @@ export default function Navbar(props) {
   setTimeout(function () {
     setPreload("");
   }, 500);
-
-
   
   return (
     <>

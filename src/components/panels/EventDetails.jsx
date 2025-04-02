@@ -4,15 +4,13 @@ import {
   EuiFlexItem,
   EuiImage,
   EuiText,
-  EuiTextAlign
 } from "@elastic/eui";
 import React from "react";
 import AddCalButtons from "../../utilities/addCalButtons";
-import { sessionOne, sessionTwo } from "../../data/consts";
+import { sessionOne } from "../../data/consts";
 import heroImage from "../../images/TrikkWiki.png";
-import { max } from "moment";
 export default class EventDetails extends React.Component {
-  renderTopText = (props) => {
+  renderTopText = () => {
     const t = (this.props.t)
     return(
       <EuiEmptyPrompt title={
@@ -25,7 +23,7 @@ export default class EventDetails extends React.Component {
     )
   }
 
-  renderHero = (props) => {
+  renderHero = () => {
     return (
       <EuiImage
         size="fullWidth"
@@ -35,7 +33,7 @@ export default class EventDetails extends React.Component {
     );
   };
 
-  renderMoreDetails = (props) => {
+  renderMoreDetails = () => {
    const t = (this.props.t)
    const myStyle = {
       backgroundColor: "lightgrey",

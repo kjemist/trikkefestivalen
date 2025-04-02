@@ -2,7 +2,6 @@ import andy from "./../images/andy.jpeg";
 import dwight from "./../images/dwight.jpeg";
 import redacted from "./../images/REDACTED.png";
 import tom from "./../images/tom.png";
-import angela from "./../images/angela.png";
 import sklitakling from "./../images/sklitakling.png"
 
 export const speakers = [

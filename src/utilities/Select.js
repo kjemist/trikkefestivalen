@@ -6,9 +6,7 @@ export default () => {
     const {i18n, t } = useTranslation(["common"])
     const options = [
         { value: 'en', text: t('English') },
-        { value: 'de', text: t('Germen') },
-        { value: 'es', text:t( 'Spanish') },
-        {value: 'pl', text: t('Polish(Poland)')}
+        { value: 'no', text: t('Norsk') },
       ];
   const [value, setValue] = useState(options[0].value);
   
@@ -19,14 +17,8 @@ export default () => {
      
     }
     switch (localStorage.getItem("i18nextLng") ) {
-      case 'es':
-        setValue(options[2].value)
-        break;
-      case 'de':
+      case 'no':
         setValue(options[1].value)
-        break;
-      case 'pl':
-        setValue(options[3].value)
         break;
        
       default:setValue(options[0].value)

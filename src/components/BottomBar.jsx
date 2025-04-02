@@ -15,7 +15,6 @@ import {
   EuiBottomBar,
   EuiFlexGroup,
   EuiFlexItem,
-  EuiToast,
   EuiLink,
 } from "@elastic/eui";
 import React, { useState } from "react";
