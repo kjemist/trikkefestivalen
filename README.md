@@ -12,7 +12,11 @@ This repository stores files associated with the website for Trikkefestivalen, a
 
 ## Deploy website
 
-on the `main` branch, run `npm run deploy` to start deployment. Changes will automatically be pushed from the `main` branch to the `gh-pages` branch, and a new deployment will also be started. It may take up to a few minutes before the changes take effect on https://kjemist.github.io/trikkefestivalen/ 
+while on the `main` branch, run 
+
+`npm run deploy`
+
+to start deployment. Changes will automatically be pushed from the `main` branch to the `gh-pages` branch, and a new deployment will also be started. It may take up to a few minutes before the changes take effect on https://kjemist.github.io/trikkefestivalen/ 
 
 ## Changes from the main template for succesful deployment
 
