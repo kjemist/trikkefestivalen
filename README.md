@@ -24,6 +24,8 @@ The original React template used to refer to a Google Sheet to update the site c
 
 We have also changed the site from running on browser routing to hash routing in order to be able to run on GitHub pages.
 
+This React page was set up to be deployed on GitHub Pages using [this guide.](https://github.com/gitname/react-gh-pages) In order to successfully be implemented, HashRouting was implemented in favor over BrowserRouting
+
 ## Contributions
 
 If you want to contribute, do not hesitate to get in touch (illimar.rekand@gmail.com), open an issue or submit a pull request.
