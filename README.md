@@ -7,8 +7,8 @@ This repository stores files associated with the website for Trikkefestivalen, a
 ## How to run a local instance
 
 1. clone this repo to a local folder on your 
-2. run `npm run`
-3. the website should open in your loval browser
+2. run `npm start`
+3. navigate to `localhost:3000` to view the page
 
 ## Deploy website
 
@@ -20,7 +20,7 @@ to start deployment. Changes will automatically be pushed from the `main` branch
 
 ## Changes from the main template for succesful deployment
 
-The original React template used to refer to a Google Sheet to update the site content. We have reverted to referring to *local content*, which is for our uses bith easier, more convenient and quicker. 
+The original React template used to refer to a Google Sheet to update the site content. We have reverted to referring to *local content*, which is for our use bit easier, more convenient and quicker. 
 
 We have also changed the site from running on browser routing to hash routing in order to be able to run on GitHub pages.
 
