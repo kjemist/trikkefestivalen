@@ -9,7 +9,6 @@ import {
 } from "@elastic/eui";
 
 import Navbar from "./Navbar";
-import BottomBar from "./BottomBar";
 import EventDetails from "./panels/EventDetails";
 import SpeakersPanel from "./panels/SpeakersPanel";
 import TalksPanel from "./panels/TalksPanel";
@@ -18,31 +17,9 @@ import { useTranslation } from "react-i18next";
 import RecordingsPanel from "./panels/RecordingsPanel";
 import FAQsPanel from "./panels/FAQsPanel";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import { Suspense } from "react";
-import spinner from "../utilities/spinner.gif";
 import Testpage from "../utilities/Testpage";
 import Select from "../utilities/Select";
 
-const Spinner = () => {
-  const { t } = useTranslation(["common"])
-  return (
-    <div>
-      <img
-        src={spinner}
-        style={{
-          width: "400px",
-          margin: "auto",
-          display: "block",
-          transition: "ease-in-out",
-        }}
-        alt="Test..."
-      />
-      <h1 style={{ fontSize: "25px", textAlign: "center" }}>
-        {t("Loading...Hold On")}😪
-      </h1>
-    </div>
-  );
-};
 
 function MainPage(props) {
    const { t } = useTranslation(["common"])
@@ -83,14 +60,11 @@ function MainPage(props) {
       onClick: () => {
         navigate("faq")
       },
-      
     },
     {
       id: "Changelanguage",
       label: <Select />,
     },
-
-    
   ];
 
   return (
@@ -125,17 +99,13 @@ function MainPage(props) {
                 <Route
                   path="/speakers"
                   element={
-                    <Suspense fallback={<Spinner />}>
                       <SpeakersPanel   t={props.t}/>
-                    </Suspense>
                   }
                 />
                 <Route
                   path="/talks"
                   element={
-                    <Suspense fallback={<Spinner />}>
                       <TalksPanel  t={props.t}/>
-                    </Suspense>
                   }
                 />
                 <Route path="/recordings" element={<RecordingsPanel 
@@ -151,9 +121,6 @@ function MainPage(props) {
             </EuiPageContentBody>
             <EuiSpacer size="l" />
           </EuiPageContent>
-          <BottomBar theme={props.theme}
-          t ={props.t}
-          />
         </EuiPageBody>
       </EuiFlexGroup>
     </EuiPage>

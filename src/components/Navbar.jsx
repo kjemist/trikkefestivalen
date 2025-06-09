@@ -1,7 +1,6 @@
 import React from "react";
 import { EuiIcon, EuiPageHeader } from "@elastic/eui";
-import AddCalButtons from "../utilities/addCalButtons";
-import { sessionOne, sessionTwo, darkThemeLogo, lightThemeLogo } from "../data/consts";
+import { darkThemeLogo, lightThemeLogo } from "../data/consts";
 import history from "../utilities/history";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -26,7 +25,6 @@ export default function Navbar(props) {
         iconProps={{
           onClick: props.onLogoClick,
         }}
-        pageTitle="Trikkefestivalen"
         pageTitleProps={{
           css: {
             cursor: "pointer",
@@ -40,16 +38,7 @@ export default function Navbar(props) {
         }}
       
         rightSideItems={[
-          <AddCalButtons 
-          date={sessionOne.dateAndTime}
-          calendarLink = {sessionOne.calendarLink}
-          t={props.t}
-          />,
-          <AddCalButtons 
-          date={sessionTwo.dateAndTime}
-          calendarLink = {sessionTwo.calendarLink}
-          t={props.t}
-          />,
+
          
           <div className="themeButton" onClick={() => props.toggleTheme()}>
             <EuiIcon type="moon" className="moon" />
