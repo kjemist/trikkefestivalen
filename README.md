@@ -3,6 +3,8 @@
 ## What is this repo?
 This repository stores files associated with the website for Trikkefestivalen, a volounteer initiative to arrange a non-profit music festival on a local, historical tram in Bergen, Norway :norway:
 
+This version is deprecated, and is replace with [this repo](https://github.com/KWaloen/trikkefestivalen_next)
+
 
 ## How to run a local instance
 
